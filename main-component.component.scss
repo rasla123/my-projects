@@ -1,0 +1,28 @@
+.top-section{
+    display:block;
+    //justify-content: space-between;
+
+    
+}
+.section{
+    display: flex;
+}
+.widget-left{
+    width: 520px;
+    height: 468px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 5px 5px 5px #939393;
+  //  margin-left: 50px;
+}
+
+.widget-right{
+   // margin-left: 50px;
+    width: 520px;
+    height: 468px;
+    background-color: #fff;
+    border-radius: 5px;
+   margin: 20px;
+    box-shadow: 5px 5px 5px #939393;
+}

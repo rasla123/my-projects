@@ -1,0 +1,30 @@
+.main-container{
+    display: flex;
+
+    .side-nav{
+        width: 200px;
+        min-width: 230px;
+      //  min-height: calc(100vh - 40px);
+      height: 1000px;
+        background-color: #113c60;
+        color: #fff;
+        box-shadow: 5px 5px 5px #939393;
+        position: absolute;
+        left: 0;
+        top: 60px;
+    }
+    .main{
+        padding: 30px;
+    }
+    .nav-items{
+        padding-top: 40px;
+
+    }
+    .nav-item{
+        padding: 25px 50px;
+        cursor: pointer;
+    }
+    .nav-item:hover{
+        background-color: rgb(1, 38,69);
+    }
+}

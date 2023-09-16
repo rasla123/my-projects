@@ -1,0 +1,148 @@
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(158, 58, 58, 0.1);
+    margin: 16px;
+    background-color: #dca0a0;
+    max-width: 400px; /* Adjust the width as needed */
+   // margin-left: 800px;
+  }
+  .dashboard-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.profile-label {
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 30%;
+    object-fit: cover;
+}
+
+.user-info {
+    margin-top: 16px;
+}
+
+.user-info div {
+    margin-bottom: 8px;
+}
+
+.main-container{
+    display: flex;
+
+    .side-nav{
+        width: 300px;
+        min-width: 230px;
+      //  min-height: calc(100vh - 40px);
+      height: 1000px;
+        background-color: #113c60;
+        color: #fff;
+        box-shadow: 5px 5px 5px #939393;
+        position: absolute;
+        left: 0;
+        top: 60px;
+    }
+    .main{
+        padding: 30px;
+    }
+    .nav-items{
+        padding-top: 40px;
+
+    }
+    .nav-item{
+        padding: 25px 50px;
+        cursor: pointer;
+    }
+    .nav-item:hover{
+        background-color: rgb(1, 38,69);
+    }
+}
+.edit-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .fom-containerr {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 30%;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  .edit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 700px;
+   // cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .edit-button :hover{
+    background-color: #0056b3;
+  }
+
+/* Profile image styles */
+.profile-image img {
+    max-width: 150px;
+    border-radius: 20%;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+  
+  /* Container for employee information */
+  .info-container {
+    border: 1px solid #d8d4d4;
+    padding: 10px;
+    margin-top: 10px;
+    //display: flex;
+   // gap: 40px;
+    margin-left: 40px;
+    height: 200px;
+  }
+  
+  /* Individual information items */
+  .info-item {
+    margin: 5px 0;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .join{
+    display: flex;
+    gap: 70px;
+    padding-left: 150px;
+  }
+  
+  

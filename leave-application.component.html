@@ -1,0 +1,38 @@
+<div class="leave-application">
+  <form [formGroup]="leaveForm" (ngSubmit)="onSubmit()">
+    <!-- ... form fields ... -->
+    <label for="employee">Select Employee:</label>
+    <select formControlName="employeeId" id="employee">
+      <option *ngFor="let employee of employees" [value]="employee.id">{{ employee.firstname }} {{ employee.lastname }}</option>
+    </select>
+   
+   
+      
+    <label for="type">Type of Leave:</label>
+    <input type="text" id="type" formControlName="type">
+    <div *ngIf="leaveForm.get('type')?.hasError('required') && leaveForm.get('type')?.touched" class="error-message">
+      Type of Leave is required.
+    </div>
+
+    <label for="startDate">Start Date:</label>
+    <input type="date" id="startDate" formControlName="startDate">
+    <div *ngIf="leaveForm.get('startDate')?.hasError('required') && leaveForm.get('startDate')?.touched" class="error-message">
+      Start Date is required.
+    </div>
+
+    <label for="endDate">End Date:</label>
+    <input type="date" id="endDate" formControlName="endDate">
+    <div *ngIf="leaveForm.get('endDate')?.hasError('required') && leaveForm.get('endDate')?.touched" class="error-message">
+      End Date is required.
+    </div>
+
+    <label for="reason">Reason:</label>
+    <textarea id="reason" formControlName="reason"></textarea>
+    <div *ngIf="leaveForm.get('employeeId')?.hasError('required') && leaveForm.get('employeeId')?.touched" class="error-message">
+      Employee is required.
+    </div>
+    
+
+    <button type="submit">Submit</button>
+  </form>
+</div>

@@ -1,0 +1,24 @@
+<div class="login-container">
+ 
+  <div class="login-form">
+    <form [formGroup]="loginForm" (ngSubmit)="login()" class="form-container">
+      <label for="username">Username:</label>
+      <input type="text" id="username" formControlName="username" class="form-control" />
+      <!-- Display validation errors if username is touched and invalid -->
+      <div *ngIf="loginForm.get('username')?.touched && loginForm.get('username')?.hasError('required')" class="error-message">
+        Username is required.
+      </div>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" formControlName="password" class="form-control" />
+      <!-- Display validation errors if password is touched and invalid -->
+      <div *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.hasError('required')" class="error-message">
+        Password is required.
+      </div>
+      
+      <button type="submit" [disabled]="loginForm.invalid" class="login-button">Login</button>
+    </form>
+  </div>
+</div>
+
+

@@ -1,0 +1,107 @@
+<div *ngIf="employee" class="user-dashboard">
+  <!-- Profile Image -->
+  <div class="profile-image" >
+    <img [src]="'/assets/images/' + employee.profile" alt="Profile Image" *ngIf="employee?.profile" />
+  </div>
+  
+  <!-- Employee Information -->
+  <div class="info-container">
+    <div class="join">
+    <div class="left"> 
+      <div class="info-item">
+      <strong>First Name:</strong> {{ employee.firstname }}
+    </div>
+   
+    <div class="info-item">
+      <strong>Last Name:</strong> {{ employee.lastname }}
+    </div>
+    <div class="info-item">
+      <strong>Birthdate:</strong> {{ employee.birthday }}
+    </div>
+    <div class="info-item">
+      <strong>Gender:</strong> {{ employee.gender }}
+    </div>
+  </div>
+   <div class="right"> 
+    <div class="info-item">
+    <strong>Role:</strong> {{ employee.role }}
+  </div>
+  <div class="info-item">
+    <strong>Email:</strong> {{ employee.email }}
+  </div>
+  <div class="info-item">
+    <strong>Mobile Number:</strong> {{ employee.mobilenumber }}
+  </div>
+</div>
+</div>
+
+   
+  
+  <div *ngIf="isEditing" class="edit-modal">
+    <div class="fom-containerr">
+    <h3>Edit Employee Information</h3>
+    <form>
+      <div class="form-group">
+        <label for="editFirstName">First Name:</label>
+        <input type="text" id="editFirstName" class="form-control" [(ngModel)]="employee.firstname" name="editFirstName" />
+      </div>
+      <div class="form-group">
+        <label for="editLastname">Last Name:</label>
+        <input type="text" id="editLastname" class="form-control" [(ngModel)]="employee.lastname" name="editLastname" />
+      </div>
+
+      <div class="form-group">
+        <label for="editLastname">Birthdate:</label>
+        <input type="text" id="editBirthDate" class="form-control" [(ngModel)]="employee.birthday" name="editBirthDate" />
+      </div>
+
+      <div class="form-group">
+        <label for="editLastname">Gender:</label>
+        <input type="text" id="editGender" class="form-control" [(ngModel)]="employee.gender" name="editGender" />
+      </div>
+
+      <div class="form-group">
+        <label for="editLastname">Role:</label>
+        <input type="text" id="editRole" class="form-control" [(ngModel)]="employee.role" name="editRole" />
+      </div>
+
+      <div class="form-group">
+        <label for="editLastname">Email:</label>
+        <input type="text" id="editEmail" class="form-control" [(ngModel)]="employee.email" name="editEmail" />
+      </div>
+
+      <div class="form-group">
+        <label for="editLastname">Mobile Number:</label>
+        <input type="text" id="editMobile" class="form-control" [(ngModel)]="employee.mobilenumber" name="editMobile" />
+      </div>
+
+      <button type="button" class="btn btn-primary" (click)="saveChanges()" style="margin-left: 10px;">Save Changes</button>
+      <button type="button" class="btn btn-secondary" (click)="cancelEdit()" style="margin-left: 30px;">Cancel</button>
+    </form>
+  </div>
+</div>
+  <button *ngIf="!isEditing" (click)="startEdit()" class="edit-button">Edit Profile</button>
+
+</div>
+
+<div class="main-container">
+  <div class="side-nav">
+      <div class="nav-items">
+          <div class="nav-item">
+            <a routerLink="/leaveapplication" style="color: white; text-decoration: none;">Leave Application</a>  
+          </div>
+
+          <div class="nav-item">
+            <a routerLink="/leave-details/{{ employee.id }}" style="text-decoration: none ;color: white;">View Leave Details</a>
+          </div>
+
+         
+      </div>
+  </div>
+</div>
+</div>
+
+
+  
+ 
+  

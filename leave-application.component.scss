@@ -1,0 +1,46 @@
+.leave-application {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+.leave-application label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.leave-application select,
+.leave-application input[type="text"],
+.leave-application input[type="date"],
+.leave-application textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.leave-application textarea {
+  height: 100px;
+}
+
+.leave-application button {
+  display: block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.leave-application button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,25 @@
+.top-section {
+  display: block;
+}
+
+.section {
+  display: flex;
+}
+
+.widget-left {
+  width: 600px;
+  height: 468px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #939393;
+}
+
+.widget-right {
+  width: 600px;
+  height: 468px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #939393;
+}/*# sourceMappingURL=main-component.component.css.map */

@@ -1,0 +1,27 @@
+.main-container {
+  display: flex;
+}
+.main-container .side-nav {
+  width: 300px;
+  min-width: 230px;
+  height: 1000px;
+  background-color: #113c60;
+  color: #fff;
+  box-shadow: 5px 5px 5px #939393;
+  position: absolute;
+  left: 0;
+  top: 60px;
+}
+.main-container .main {
+  padding: 30px;
+}
+.main-container .nav-items {
+  padding-top: 40px;
+}
+.main-container .nav-item {
+  padding: 25px 50px;
+  cursor: pointer;
+}
+.main-container .nav-item:hover {
+  background-color: rgb(1, 38, 69);
+}/*# sourceMappingURL=dashboard-sidenav.component.css.map */
